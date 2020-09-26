@@ -16,6 +16,8 @@ const url = '//localhost/CRUD_db'
 //     console.log('connected ...') //because it may take time
 // })
 
+app.use(express.json) //to be accessible in whole project
+
 //import and map request to specific router
 const alienRouter = require('./routers/aliens')
 
@@ -23,6 +25,6 @@ const alienRouter = require('./routers/aliens')
 app.use('/aliens',alienRouter) //if you received the /aliens go to this js file
 
 //listen to port 9000
-app.listen(9000,()=>{ //= function() , for function when we dont have name we can use () =>
+app.listen(8000,()=>{ //= function() , for function when we dont have name we can use () =>
     console.log('server started')
 })

@@ -15,3 +15,7 @@ const alienSchema = mongoose.Schema({
         default:false
     }
 })
+
+//FROM ONE MODULE TO ANOTHER ONE WE SHOULD EXPORT THR VALUE
+//should export to model
+module.exports=mongoose.model('aliensModel',alienSchema)
