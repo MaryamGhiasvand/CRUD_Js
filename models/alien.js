@@ -18,4 +18,4 @@ const alienSchema = mongoose.Schema({
 
 //FROM ONE MODULE TO ANOTHER ONE WE SHOULD EXPORT THR VALUE
 //should export to model
-module.exports=mongoose.model('aliensModel',alienSchema)
+module.exports=mongoose.model('alien',alienSchema) // aliens(Plural form)= name of collection => if it is existed, first will create it
