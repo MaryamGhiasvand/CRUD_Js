@@ -16,6 +16,11 @@ const url = '//localhost/CRUD_db'
 //     console.log('connected ...') //because it may take time
 // })
 
+//import and map request to specific router
+const alienRouter = require('./routers/aliens')
+
+//= class level requestMapping
+app.use('/aliens',alienRouter) //if you received the /aliens go to this js file
 
 //listen to port 9000
 app.listen(9000,()=>{ //= function() , for function when we dont have name we can use () =>
